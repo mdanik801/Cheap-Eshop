@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+   font-family: "poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.boxsell-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #23242a;
+}
+.box-sell {
+   position: relative;
+   width: 600px;
+   height: 1000px;
+   background: #d19e74;
+   /* background: #1c1c1c; */
+   overflow: hidden;
+   border-radius: 10px;
+   z-index: 14;
+   margin-top: 15px;
+   text-align: center;
+}
+
+.box-sell::before {
+   content: "";
+   position: absolute;
+   top: -10%;
+   left: -30%;
+   width: 500px;
+   height: 600px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.borderline {
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   inset: 0;
+}
+
+.borderline-sell::before {
+   content: "";
+   position: absolute;
+   top: -10%;
+   left: -30%;
+   width: 500px;
+   height: 600px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -1.5s;
+}
+
+.borderline-sell::after {
+   content: "";
+   position: absolute;
+   top: -10%;
+   left: -30%;
+   width: 500px;
+   height: 600px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -4.5s;
+}
+
+.box-sell::after {
+   content: "";
+   position: absolute;
+   top: -10%;
+   left: -30%;
+   width: 500px;
+   height: 600px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+}
+@keyframes animate {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.box-sell form {
+   position: absolute;
+   inset: 4px;
+   background: #222;
+   padding: 50px 40px;
+   border-radius: 8px;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.box-sell form {
+   color: #ffffff;
+   font-weight: 500;
+   text-align: center;
+   letter-spacing: 0.1em;
+}
+.box-sell form .inputbox {
+   position: relative;
+   width: 300px;
+   margin-top: 20px;
+}
+.box-sell form .inputbox input {
+   position: relative;
+   width: 100%;
+   padding: 20px;
+   background: transparent;
+   outline: none;
+   border: none;
+   box-shadow: none;
+   color: #23242a;
+   font-size: 1em;
+   letter-spacing: 0.05s;
+   z-index: 10;
+}
+.box-sell form .inputbox span {
+   position: absolute;
+   left: 0;
+   padding: 20px 0px 10px;
+   pointer-events: none;
+   color: #8f8f8f;
+   font-size: 1em;
+   letter-spacing: 0.05em;
+   transition: 0.5s;
+}
+.box-sell form .inputbox input:valid ~ span,
+.box-sell form .inputbox input:focus ~ span {
+   color: #fff;
+   font-size: 0.75em;
+   transform: translateY(-34px);
+}
+
+.box-sell form .inputbox i {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 250px;
+   height: 2px;
+   background: #f06c00;
+
+   border-radius: 4px;
+   overflow: hidden;
+   transition: 0.5s;
+   pointer-events: none;
+}
+.box-sell form .inputbox input:valid ~ i,
+.box-sell form .inputbox input:focus ~ i {
+   height: 44px;
+}
+.box-sell form .links {
+   display: flex;
+   justify-content: space-between;
+}
+.box-sell form .links a {
+   margin: 10px 0;
+   font-size: 0.75em;
+   color: #8f8f8f;
+   text-decoration: none;
+}
+.box-sell form .links a:hover,
+.box-sell form .links a:nth-child(2) {
+   color: #fff;
+}
+.box-sell form input[type="submit"] {
+   border: none;
+   outline: none;
+   padding: 9px 25px;
+   background: #fff;
+   cursor: pointer;
+   font-size: 0.9em;
+   border-radius: 4px;
+   font-weight: 600;
+   width: 100px;
+   margin-top: 10px;
+}
+.box-sell form input[type="submit"]:active {
+   opacity: 0.8;
+}
+.box-sell form input[type="submit"]:hover {
+   background-color: #45f3ff;
+   color: #ffffff;
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   border-radius: 5px;
+}
+.links span {
+   margin-top: 6px;
+   color: white;
+   font-size: 13px;
+}
+.box-sell form input[type="submit"]:hover {
+   background-color: #45f3ff;
+   color: #ffffff;
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   border-radius: 5px;
+}
+.Submitsec {
+   display: flex;
+   justify-content: space-between;
+}
+.Submitsec img {
+   height: 40px;
+   width: 40px;
+   margin-top: 12px;
+   background-color: black;
+   border-radius: 10px;
+   box-shadow: 0 0 5px #f06c00, 0 0 25px #f06c00, 0 0 50px #f06c00, 0 0 100px #f06c00;
+}
+.error-msg {
+   color: #ff2770;
+}
+.success-msg {
+   color: #45f3ff;
+}
+.box-sell form input[type="file"] {
+   /* margin-left: 1px; */
+   padding: 4px;
+   color: #f06c00;
+   margin-top: 50px;
+   z-index: 4;
+   opacity: 0.3;
+}
+.inputFildes {
+   text-align: center;
+   margin-left: 70px;
+}

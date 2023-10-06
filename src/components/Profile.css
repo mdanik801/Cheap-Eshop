@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+   font-family: "poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.box-container-pro {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #23242a;
+}
+
+.box-profile::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.borderline-profile::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -1.5s;
+}
+.borderline-profile::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -4.5s;
+}
+
+.box-profile::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+}
+@keyframes animate {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.datasection {
+   position: absolute;
+   inset: 4px;
+   background: #222;
+   padding: 5px;
+   border-radius: 8px;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   color: aliceblue;
+   display: flex;
+}
+.datasection h5 {
+   color: #45f3ff;
+   margin-top: 10px;
+}
+.datasection span {
+   color: #0099ff;
+}
+.datasection img {
+   height: 150px;
+   width: 150px;
+   box-shadow: 0 0 5px #45f3ff, 0 0 18px #45f3ff, 0 0 36px #45f3ff, 0 0 72px #ff2770;
+   margin-bottom: 20px;
+}
+
+.Erorre {
+   color: #ff2770;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin-top: 250px;
+}
+.user-data {
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+}

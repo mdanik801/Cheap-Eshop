@@ -1,0 +1,104 @@
+.nav {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   background-color: black;
+   /* align-items: center; */
+   /* position: fixed; */
+   margin-top: 0;
+   /* z-index: 40; */
+}
+.Rightcontainer nav {
+   display: flex;
+   justify-content: flex-end;
+   background-color: black;
+   align-items: center;
+   margin-top: 0;
+}
+
+/* .Rightcontainer {
+
+
+} */
+.nav button {
+   margin: 5px;
+   background-color: black;
+   color: white;
+   width: 72px;
+   border: none;
+   border-radius: 7px;
+   padding: 2px;
+   transition: 0.5s;
+}
+nav button:hover {
+   color: #ff2770;
+   background-color: white;
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   border-radius: 7px;
+   padding: 1px;
+   font-weight: bold;
+   text-shadow: 2px 1px #161616;
+   transition: 0.3s;
+}
+.cart-icon-css {
+   color: white;
+   background-color: #009688;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 30px;
+   position: relative;
+   top: 2px;
+   left: 10px;
+}
+.cart-btn {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+}
+.cart-btn img {
+   width: 30px;
+   height: fit-content;
+   border-radius: 8px;
+   transition: 0.5s;
+}
+.cart-btn img:hover {
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   transition: 0.5s;
+}
+.profile-icon {
+   width: 35px;
+   padding-right: 10px;
+   border-radius: 10px;
+   transition: 0.5s;
+}
+.profile-icon:hover {
+   box-shadow: 0 0 5px #ff2770, 0 0 25px #ff2770, 0 0 50px #ff2770, 0 0 100px #ff2770;
+   transition: 0.5s;
+}
+
+.Leftcontainer img {
+   width: 170px;
+   height: 50px;
+   margin: 4px;
+}
+
+/* small Navbar  🔻*/
+.sm-nav {
+   text-align: center;
+   background-color: #0f4a61;
+}
+.sm-nav button {
+   background-color: #ffffff;
+   font-weight: bold;
+   font-size: 18px;
+   color: #45f3ff;
+   margin: 3px;
+   padding: 3px;
+   border: 2px white solid;
+   border-radius: 8px;
+   width: 100px;
+   text-shadow: 2px 1px #131212;
+}

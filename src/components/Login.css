@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+   font-family: "poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.box-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #23242a;
+}
+.box {
+   position: relative;
+   width: 380px;
+   height: 630px;
+   background: #1c1c1c;
+   overflow: hidden;
+   border-radius: 10px;
+}
+.box-login {
+   position: relative;
+   width: 380px;
+   height: 400px;
+   background: #1c1c1c;
+   overflow: hidden;
+   border-radius: 10px;
+}
+.box::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+.box-login::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -30%;
+   width: 300px;
+   height: 350px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+.borderline {
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   inset: 0;
+}
+.borderline-login {
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   inset: 0;
+}
+.borderline::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -1.5s;
+}
+.borderline-login::before {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -30%;
+   width: 300px;
+   height: 350px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -1.5s;
+}
+.borderline::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -4.5s;
+}
+.borderline-login::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -30%;
+   width: 300px;
+   height: 350px;
+   background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -4.5s;
+}
+.box::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -40%;
+   width: 350px;
+   height: 550px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+}
+.box-login::after {
+   content: "";
+   position: absolute;
+   top: -30%;
+   left: -30%;
+   width: 300px;
+   height: 350px;
+   background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+   z-index: 1;
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+}
+@keyframes animate {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.box form {
+   position: absolute;
+   inset: 4px;
+   background: #222;
+   padding: 50px 40px;
+   border-radius: 8px;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+}
+.box form h2,
+h6 {
+   color: #ffffff;
+   font-weight: 500;
+   text-align: center;
+   letter-spacing: 0.1em;
+}
+.box form .inputbox {
+   position: relative;
+   width: 300px;
+   margin-top: 20px;
+}
+.box form .inputbox input {
+   position: relative;
+   width: 100%;
+   padding: 20px;
+   background: transparent;
+   outline: none;
+   border: none;
+   box-shadow: none;
+   color: #23242a;
+   font-size: 1em;
+   letter-spacing: 0.05s;
+   z-index: 10;
+}
+.box form .inputbox span {
+   position: absolute;
+   left: 0;
+   padding: 20px 0px 10px;
+   pointer-events: none;
+   color: #8f8f8f;
+   font-size: 1em;
+   letter-spacing: 0.05em;
+   transition: 0.5s;
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span {
+   color: #fff;
+   font-size: 0.75em;
+   transform: translateY(-34px);
+}
+
+.box form .inputbox i {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   border-radius: 4px;
+   overflow: hidden;
+   transition: 0.5s;
+   pointer-events: none;
+}
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i {
+   height: 44px;
+}
+.box form .links {
+   display: flex;
+   justify-content: space-between;
+}
+.box form .links a {
+   margin: 10px 0;
+   font-size: 0.75em;
+   color: #8f8f8f;
+   text-decoration: none;
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2) {
+   color: #fff;
+}
+.box form input[type="submit"] {
+   border: none;
+   outline: none;
+   padding: 9px 25px;
+   background: #fff;
+   cursor: pointer;
+   font-size: 0.9em;
+   border-radius: 4px;
+   font-weight: 600;
+   width: 100px;
+   margin-top: 10px;
+}
+.box form input[type="submit"]:active {
+   opacity: 0.8;
+}
+.box form input[type="submit"]:hover {
+   background-color: #45f3ff;
+   color: #ffffff;
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   border-radius: 5px;
+}
+.links span {
+   margin-top: 6px;
+   color: white;
+   font-size: 13px;
+}
+.box form input[type="submit"]:hover {
+   background-color: #45f3ff;
+   color: #ffffff;
+   box-shadow: 0 0 5px #45f3ff, 0 0 25px #45f3ff, 0 0 50px #45f3ff, 0 0 100px #45f3ff;
+   border-radius: 5px;
+}
+.Submitsec {
+   display: flex;
+   justify-content: space-between;
+}
+.Submitsec img {
+   height: 40px;
+   width: 40px;
+   margin-top: 12px;
+   background-color: black;
+   border-radius: 10px;
+   box-shadow: 0 0 5px #ff2770, 0 0 25px #ff2770, 0 0 50px #ff2770, 0 0 100px #ff2770;
+}
+.errorMsg {
+   color: #ff2770;
+}
+.successMsg {
+   color: #45f3ff;
+}
