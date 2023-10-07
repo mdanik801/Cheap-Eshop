@@ -9,3 +9,6 @@ Currently, two official plugins are available:
 # E-com
 # E-com
 # E-com
+# E-Commerce
+# E-Commerce
+# E-Commerce
