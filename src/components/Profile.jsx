@@ -13,8 +13,8 @@ export default function Profile() {
          auth.onAuthStateChanged((userlogged) => {
             if (userlogged) {
                const getUsers = async () => {
-                  const q = query(collection(db, "users"), where("uid", "==", userlogged.uid));
-                  // console.log(q);
+                  const q = query(userCollactionRef, where("uid", "==", userlogged.uid));
+                  console.log("=------");
                   const data = await getDocs(q);
                   setUser(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
                };

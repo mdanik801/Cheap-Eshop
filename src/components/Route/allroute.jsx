@@ -11,8 +11,9 @@ import PgFOF from "../sheard/PgFOF";
 export const allroute = [
    {
       path: "/",
-      element: <Home />,
+      element: <Login />,
    },
+
    {
       path: "/home",
       element: <Home />,
@@ -55,6 +56,7 @@ export const allroute = [
       path: "/product-type/shoes",
       element: <Allprodut type={"Shoes"} />,
    },
+
    {
       path: "/product/:id/:type",
       element: <Specificproduct />,

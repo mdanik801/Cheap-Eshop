@@ -11,7 +11,6 @@ export default function Productslider(Props) {
    useEffect(() => {
       const getProducts = () => {
          const productsArry = [];
-
          getDocs(collection(db, path))
             .then((querySnapshot) => {
                querySnapshot.forEach((doc) => {

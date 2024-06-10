@@ -17,15 +17,15 @@ export default function ProductContainer(product) {
 
          <hr />
          <div className="card-body">
-            <a href={`/product/${p.id}/${p.producttype}/`}>
+            <Link src={`/product/${p.id}/${p.producttype}`}>
                <button className="card-title">{p.producttitle}</button>
-            </a>
+            </Link>
          </div>
          <h6 className="d-flex justify-content-center">
             MRP: <p>৳{mrp}</p>{" "}
          </h6>
          <div className="btn  ">
-            <a href={`/product/${p.id}/${p.producttype}/`}>
+            <a href={`/product/${p.id}/${p.producttype}`}>
                <button>More Details &gt;...</button>
             </a>
          </div>

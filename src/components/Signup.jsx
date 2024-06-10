@@ -17,6 +17,7 @@ export default function Signup() {
    const [isLoading, setIsLoading] = useState(false);
 
    const usersclotion = collection(db, "users");
+   console.log("===========", usersclotion);
 
    const [errorMsg, setErrorMsg] = useState("");
    const [successMsg, setSuccessMsg] = useState("");
@@ -31,8 +32,6 @@ export default function Signup() {
             // Signed in
             const user = userCredential.user;
             const initialcartvalue = 0;
-            console.log(user);
-            console.log("user");
 
             addDoc(collection(db, "users"), {
                name: name,

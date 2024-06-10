@@ -9,8 +9,10 @@ import spiner from "./img/loaders.gif";
 import COD from "./img/cod.png";
 import Warranty from "./img/warranty.gif";
 import Replacement from "./img/replacement.png";
+
 import Productslider from "../sheard/productslider/Productslider";
 import { Link } from "react-router-dom";
+
 export default function Specificproduct() {
    const { id, type } = useParams();
    const [product, setProduct] = useState("");
